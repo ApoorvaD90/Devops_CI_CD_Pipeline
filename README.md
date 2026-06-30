@@ -2,7 +2,10 @@
 ## Project Overview
 This project demonstrates a Jenkins CI/CD pipeline that automates
 building, testing, and deploying a simple Python Flask web application.
-## Prerequisites- Jenkins 2.x installed (with suggested plugins)- Python 3.x available on the Jenkins server- GitHub account with webhook access- Gmail account with App Password configured for notifications
+## Prerequisites
+- Jenkins 2.x installed (with suggested plugins)
+- Python 3.x available on the Jenkins server- GitHub account with webhook access
+- Gmail account with App Password configured for notifications
 ## Project Structure
 ```
 flask-jenkins-app/
