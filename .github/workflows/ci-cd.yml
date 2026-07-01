@@ -76,7 +76,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > private_key
           chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key $STAGING_USER@$STAGING_HOST << 'EOF'
-            cd /home/ubuntu/flask-app || git clone https://github.com/${{ github.repository }} /home/ubuntu/flask-app
+            cd /home/ubuntu/flask-app || git clone https://github.com/${{ github.repository }} /home/ubuntu/Devops_CI_CD_Pipeline
             cd /home/ubuntu/flask-app
             git pull origin staging
             pip install -r requirements.txt
@@ -104,7 +104,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > private_key
           chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key $PROD_USER@$PROD_HOST << 'EOF'
-            cd /home/ubuntu/flask-app || git clone https://github.com/${{ github.repository }} /home/ubuntu/flask-app
+            cd /home/ubuntu/flask-app || git clone https://github.com/${{ github.repository }} /home/ubuntu/Devops_CI_CD_Pipeline
             cd /home/ubuntu/flask-app
             git pull origin main
             pip install -r requirements.txt
